@@ -10,7 +10,7 @@ from forwarder import API_KEY, OWNER_ID, WEBHOOK, IP_ADDRESS, URL, CERT_PATH, PO
 from forwarder.modules import ALL_MODULES
 
 PM_START_TEXT = """
-Hey {}, I'm {}!
+Hey {}, I'm Zer0Byte ✘ Channel Forwarder!
 I'm a bot used to forward messages from one chat to another.
 
 To obtain a list of commands, use /help.
@@ -37,7 +37,7 @@ def start(bot: Bot, update: Update):
     if chat.type == "private":
         message.reply_text(PM_START_TEXT.format(user.first_name, dispatcher.bot.first_name), parse_mode=ParseMode.HTML)
     else:
-        message.reply_text("I'm up and running!")
+        message.reply_text("🌟 Zer0Byte ✘ Forwarder Is Online 🌟")
 
 
 @run_async
